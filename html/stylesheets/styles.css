@@ -104,10 +104,6 @@
 #banner {
   margin-bottom: 20px;
 }
-#banner .row {
-  display: flex;
-  align-items: center;
-}
 #banner .row .glyphicon-shopping-cart {
   font-size: 25px;
   vertical-align: middle;
@@ -173,18 +169,18 @@
   border: solid #ACACAC 1px;
   padding: 5px 15px 20px 15px;
 }
-#description .nav-tabs {
+.nav-tabs {
   border-bottom: 5px solid #00ADEF;
 }
-#description .nav-tabs > li.active > a {
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
   color: #ffffff;
   background-color: #00ADEF;
 }
-#description .tab-pane {
+.tab-pane {
   padding: 30px 0;
 }
 
-#description .tab-pane p {
+.tab-pane p {
   margin-bottom: 30px;
 }
 
@@ -232,6 +228,9 @@
   margin-bottom: 40px;
 }
 #related-product {
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: solid 1px #AAAAAA;
   margin-bottom: 40px;
 }
 #content .filters {
@@ -332,4 +331,51 @@
 }
 .results-navigation .pagination {
   margin: 0px;
+}
+
+.form-group.required .control-label:after { 
+   content:"*";
+   color:red;
+}
+.form-group .control-label { 
+  text-align: left;
+}
+@media (min-width: 990px) {
+  #banner .row {
+    display: flex;
+    align-items: center;
+  }
+}
+.dl-horizontal dd {
+  margin-left: 180px;
+}
+.dl-horizontal dt {
+  width: 160px;
+  float: left
+}
+#banner img {
+  margin-bottom: 10px;
+}
+.tab-pane table {
+  width: 100%;
+}
+.tab-pane table tbody tr {
+  height: 150px;
+}
+.tab-pane table tbody td .price{
+  font-size: 30px;
+  font-weight: bold;
+  color: #FF4900;
+}
+.tab-pane table tbody td .desc{
+  font-style: italic;
+}
+.tab-pane table tbody td.quantity{
+  font-weight: bold;
+}
+.tab-pane table tbody td h4{
+  font-weight: bold;
+}
+.profile-picture {
+  margin-bottom: 20px;
 }
